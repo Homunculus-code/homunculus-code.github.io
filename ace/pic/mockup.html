@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--*Font: ‘Avenir’, ‘Open Sans’ or any other similar font
+Primary Color : #4a4a4a
+Secondary Color : #F3F3F3 -->
+<html>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <style>
+        html{
+            background-color: #cacaca;
+        }
+        #links{
+            display: grid;
+            grid-template-rows: repeat(1, 20px);
+            grid-template-columns: repeat(5, 100px);
+            color: #4a4a4a;
+            justify-items: center;
+            align-items: center;
+            font-size: 20px;
+            top: 70px;
+            position: relative;
+            font-family: 'Open Sans';
+        }
+        #headbox{
+            background-color: #484848;
+            color:  #F3F3F3;
+            font-family: 'Open Sans';
+            font-size: 30px;
+            font-weight: bold;
+            padding: 5px 10px 5px 10px;
+            box-sizing: border-box;
+            left: 40px;
+            position: fixed;
+        }
+
+        #Shop:hover{
+            color: #7b7b7b; 
+        }
+
+        #Collection:hover{
+            color: #7b7b7b; 
+        }
+
+        #Blog:hover{
+            color: #7b7b7b; 
+        }
+
+        #Contact:hover{
+            color: #7b7b7b; 
+        }       
+        
+        #Shop{
+        padding: 10px;
+        box-sizing: border-box;
+        animation-duration: 5s;
+        position: relative;
+        left: 750px;
+        }
+
+        #Collection{
+        padding: 10px;
+        box-sizing: border-box;
+        animation-duration: 10s;
+        position: relative;
+        left: 750px;
+        }
+
+
+        #Blog{
+        padding: 10px;
+        box-sizing: border-box;
+        animation-duration: 15s;
+        position: relative;
+        left: 750px;
+        }
+
+        #Contact{
+        padding: 10px;
+        box-sizing: border-box;
+        animation-duration: 20s;
+        position: relative;
+        left: 750px;
+        }
+
+        #Search{
+            top: 3px;
+            padding: 10px;
+            box-sizing: border-box;
+            animation-duration: 20s;
+            position: relative;
+            left: 725px;
+        }
+
+        .appearing{
+        animation-name: appear;
+        animation-fill-mode: forwards;
+                                        }
+        
+
+        @keyframes appear{
+        100%{ 
+                opacity:1;
+                        } 
+                            }
+    </style>
+    <body>
+        <nav>
+            <div id = "links">
+                <div id = "headbox">IKEA</div>
+                <div id = "Shop">Shop</div>
+                <div id = "Collection">Collection</div>
+                <div id = "Blog">Blog</div>
+                <div id = "Contact">Contact</div>
+                <div id = "Search"><img src = "https://cdn-icons-png.flaticon.com/512/54/54481.png" width = "20px" height = "20px"></div>
+            </div>
+        </nav>
+    </body>
+</html>

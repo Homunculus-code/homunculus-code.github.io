@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<!--*Font: ‘Avenir’, ‘Open Sans’ or any other similar font
+Primary Color : #4a4a4a
+Secondary Color : #F3F3F3 -->
+<html>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <style>
+        html{
+            background-color: #efefef;
+            font-family: 'Avenir', Helvetica, sans-serif;
+            max-width: 100%;
+            overflow-x: hidden;
+            max-height: 10%;
+        }
+        #categjpg{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            position: relative;
+
+            bottom: 740px;
+            font-weight: 900;
+        }
+        #categ{
+            display: grid;
+            grid-template-rows: repeat(1, 10px);
+            grid-template-columns: repeat(4, 300px);
+            justify-items: center;
+            align-items: center;
+            right: 40px;
+            bottom: 600px;
+            position: relative;  
+            padding-left: 50px;
+            padding-right: 50px;
+            font-size: 40px;
+        }
+        #about{
+            background-color: #242424;
+            padding-top: 100px;
+            padding-left:  120px;
+            padding-bottom: 30px;
+            color:  #4a4a4a;
+            position: relative;
+            right: 20px;
+            width: 1500px;
+        }
+        #fresh{
+            position: absolute;
+            left: 460px;
+            bottom: 400px;
+            font-size: 60px;
+            letter-spacing: 10px;
+            font-weight: bold;
+            color: #4a4a4a;
+            animation-duration: 5s;
+            opacity: 0;
+        }
+        #links{
+            display: grid;
+            grid-template-rows: repeat(1, 20px);
+            grid-template-columns: repeat(5, 100px);
+            color: #4a4a4a;
+            justify-items: center;
+            align-items: center;
+            font-size: 20px;
+            top: 70px;
+            position: relative;
+            font-family: 'Montserrat';
+        }
+        #Montage{
+            position: relative;
+            top: 10px;
+        }
+        #speci{
+            display: grid;
+            position: relative;
+            left: 650px;
+            grid-template-rows: repeat(7, 80px);
+            grid-template-columns: repeat(1, 100px);
+            bottom: 470px;
+            font-size: 20px;
+            color: #4a4a4a;
+        }
+        #headbox{
+            background-color: #484848;
+            color:  #F3F3F3;
+            font-weight: 900;
+            font-size: 30px;
+            padding: 5px 10px 5px 10px;
+            box-sizing: border-box;
+            left: 40px;
+            position: absolute;
+            animation-duration: 3s;
+            opacity: 0;
+            letter-spacing: 3px;
+            font-family: Montserrat;
+        }
+
+        #Shop:hover{
+            color: whitesmoke; 
+            background-color: #8f8f8f; 
+        }
+
+        #Collection:hover{
+            color: whitesmoke; 
+            background-color: #8f8f8f; 
+        }
+
+        #Blog:hover{
+            color: whitesmoke; 
+            background-color: #8f8f8f; 
+        }
+
+        #Contact:hover{
+            color: whitesmoke; 
+            background-color: #8f8f8f; 
+        }       
+        
+        #Shop{
+        padding: 10px;
+        box-sizing: border-box;
+        animation-duration: 5s;
+        position: relative;
+        left: 750px;
+        }
+
+        #Collection{
+        padding: 10px;
+        box-sizing: border-box;
+        animation-duration: 10s;
+        position: relative;
+        left: 750px;
+        }
+
+
+        #Blog{
+        padding: 10px;
+        box-sizing: border-box;
+        animation-duration: 15s;
+        position: relative;
+        left: 750px;
+        }
+
+        #Contact{
+        padding: 10px;
+        box-sizing: border-box;
+        animation-duration: 20s;
+        position: relative;
+        left: 739px;
+        }
+
+        #Search{
+            top: 3px;
+            padding: 10px;
+            box-sizing: border-box;
+            animation-duration: 20s;
+            position: relative;
+            left: 725px;
+        }
+
+        #header{
+            position: relative;
+            right: 200px;
+            z-index: -1;
+        }
+
+        #abpara{
+            width: 30%;
+            padding-bottom: 80px;
+        }
+
+        #aboutpng{
+            position: relative;
+            left: 950px;
+            bottom: 900px;
+            size: 200px;
+            width: 200px;
+        }
+
+        #ourspec{
+            color: #969696;
+            font-weight: 100px;
+            position: relative;
+            bottom: 25px;
+            letter-spacing: 3px;
+        }
+
+        #bathroom{
+        background-image: url(pic/bathroom.jpg);
+        background-size: cover;
+        height: 600px;
+        width: 300px;
+        box-sizing:border-box;
+        text-align: center;
+        font-size: 30px;
+        color: white;
+        padding: 240px 10px 150px 10px;
+        z-index: 1;
+        color: #4a4a4a;
+        font-family: 'Montserrat';
+        }
+
+        #kitchen{
+            background-image: url(pic/kitchen.jpg);
+            background-size: cover;
+            height: 600px;
+            width: 300px;
+            box-sizing:border-box;
+            text-align: center;
+            font-size: 30px;
+            color: white;
+            padding: 240px 10px 150px 10px;
+            z-index: 1;
+            color: #4a4a4a;
+            font-family: 'Montserrat';
+        }
+
+        #bedroom{
+            background-image: url(pic/bedroom.jpg);
+            background-size: cover;
+            height: 600px;
+            width: 300px;
+            box-sizing:border-box;
+            text-align: center;
+            font-size: 30px;
+            color: white;
+            padding: 240px 10px 150px 10px;
+            z-index: 1;
+            color: #4a4a4a;
+            font-family: 'Montserrat';
+        }
+
+        #livingroom{
+            background-image: url(pic/livingroom.jpg);
+            background-size: cover;
+            height: 600px;
+            width: 300px;
+            box-sizing:border-box;
+            text-align: center;
+            font-size: 30px;
+            color: white;
+            padding: 240px 10px 150px 10px;
+            z-index: 1;
+            color: #4a4a4a;
+            font-family: 'Montserrat';
+        }
+
+        #kitchen:hover{
+            animation-fill-mode: forwards;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.90);
+        }
+
+        #bathroom:hover{
+            animation-fill-mode: forwards;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.90);
+        }
+
+        #livingroom:hover{
+            animation-fill-mode: forwards;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.90);
+        }
+
+        #bedroom:hover{
+            animation-fill-mode: forwards;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.90);
+        } 
+        
+        .appearing{
+        animation-name: appear;
+        animation-fill-mode: forwards;
+                                        }
+        
+
+        @keyframes appear{
+        100%{ 
+                opacity:1;
+                        } 
+                            }
+    </style>
+    <body>
+        <nav>
+            <div id = "links">
+                <div id = "headbox" class = 'appearing'>IKAE</div>
+                <div id = "Shop">Shop</div>
+                <div id = "Collection">Collection</div>
+                <div id = "Blog">Blog</div>
+                <div id = "Contact">Contact</div>
+                <div id = "Search"><img src = "https://cdn-icons-png.flaticon.com/512/54/54481.png" width = "20px" height = "20px"></div>
+            </div>
+        </nav>
+        <div id = "header">
+            <img src = 'pic/header.jpg' length = "1500px" width = "1500px">
+            <h1 color = "#7b7b7b" id = "fresh" class = 'appearing'>FRESH FURNITURE</h1>
+        </div>
+        <div id = "about">
+                <h1 style = "letter-spacing:5px;">about us</h1>
+                <br>
+                <h2 style = "font-weight: 50px;color: #969696">we provide good furniture</h2>
+                <p id = "abpara">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div id = "speci">
+            <h2 id  = "ourspec"><strong>our specialization</strong></h2>
+            <p>DELIVERY<img src = "pic/delivery.png" size = "50px" width = "50px"></p>
+            <p>SUPPORT<img src = "pic/support.png" size = "50px" width = "50px"></p>
+            <p id = "Montage">MONTAGE <img src = "pic/montage.png" size = "50px" width = "50px"></p>
+        </div> 
+        <img src = "pic/about.png" id = "aboutpng">
+        <h1 style="position:relative;left:150px;bottom:740px;letter-spacing: 5px;"><strong>categories</strong></h1>
+        <div id  = "categjpg">
+            <p id = "bathroom">BATHROOM</p>
+            <p id = "kitchen">KITCHEN</p>
+            <p id = "bedroom">BEDROOM</p>
+            <p id = "livingroom">LIVING <br> ROOM</p>
+        </div>
+    </body>
+</html>
